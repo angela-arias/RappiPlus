@@ -55,13 +55,6 @@ Prueba estadistica: Z test
 > No necesitas instalar Python ni librerías localmente; Colab ya las incluye.
 
 
-## 📋 Guía de reproducción:
-
-1. Asegúrate de tener los datasets (`rappiplus_orders_raw.csv`, `rappiplus_catalog.csv`, `rappiplus_marketing_spend.csv`) en la misma carpeta que el notebook, o en la ruta indicada dentro del código.
-   
-2. Ejecuta las celdas **en orden secuencial**.
-   
-
 ## 📝 Principales hallazgos ##
 
 El negocio es rentable en el periodo, incluso después de descontar marketing.
@@ -76,6 +69,12 @@ El cambio de UI del checkout no mostró un efecto estadísticamente significativ
 
 Las ventas están repartidas de forma pareja entre categorías (~33% del ingreso cada una). Hogar y Moda venden más unidades que Electrónica.
 
+## Gráficos
+![ver_1](z_test.png)
+
+Rappiplus realizó una modificación en la UI del checkout para evaluar si impactaba la **tasa de conversión de compra**. Para lo cual se utilizó un Z test para su verificación. 
+
+**Concluyendo que:** Las tasas de conversión de control (15.69%) y tratamiento (16.29%) son similares y sus intervalos de confianza al 95% se solapan. El test z (α = 0.05, p = 0.4161) y el intervalo de la diferencia [-0.84, 2.03] pp, que incluye el 0, indican que no hay evidencia estadística de que la nueva UI modifique la conversión. No rechazar H₀ no demuestra que ambas UI sean iguales: significa que con estos datos no se detectó un efecto.
 
 
 
