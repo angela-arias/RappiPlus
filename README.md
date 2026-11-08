@@ -69,7 +69,7 @@ El cambio de UI del checkout no mostró un efecto estadísticamente significativ
 
 Las ventas están repartidas de forma pareja entre categorías (~33% del ingreso cada una). Hogar y Moda venden más unidades que Electrónica.
 
-## Gráficos Z test
+## 📈 Gráficos Z test
 ![ver_1](z_test.JPG)
 
 Rappiplus realizó una modificación en la UI del checkout para evaluar si impactaba la **tasa de conversión de compra**. Para lo cual se utilizó un Z test para su verificación. 
@@ -77,10 +77,12 @@ Rappiplus realizó una modificación en la UI del checkout para evaluar si impac
 **Concluyendo que:** Las tasas de conversión de control (15.69%) y tratamiento (16.29%) son similares y sus intervalos de confianza al 95% se solapan. El test z (α = 0.05, p = 0.4161) y el intervalo de la diferencia [-0.84, 2.03] pp, que incluye el 0, indican que no hay evidencia estadística de que la nueva UI modifique la conversión. No rechazar H₀ no demuestra que ambas UI sean iguales: significa que con estos datos no se detectó un efecto.
 
 
-## Gráficos Métricas
+## 💰 Métricas
 ![ver_1](Metricas.JPG)
 
+Datos que confirman la rentabilidad de RappiPlus.
 
+**Nota:** los dashboards que detallan esta informacion con graficas y demás esta en Notion.
 
 
 
