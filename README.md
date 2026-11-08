@@ -78,7 +78,9 @@ Rappiplus realizó una modificación en la UI del checkout para evaluar si impac
 
 
 ## Gráficos Métricas
-![ver_1](z_test.JPG)
+![ver_1](Metricas.JPG)
+
+
 
 
 
