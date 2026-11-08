@@ -57,17 +57,18 @@ Prueba estadistica: Z test.
 
 ## 📝 Principales hallazgos ##
 
-El negocio es rentable en el periodo, incluso después de descontar marketing.
+**El negocio es rentable** en el periodo, incluso después de descontar marketing.
 
-Marketing es la partida que más pesa: equivale a cerca del 30% del ingreso y a casi la mitad del profit bruto.
+**Marketing es la partida que más pesa:** equivale a cerca del 30% del ingreso y a casi la mitad del profit bruto.
 
-En el funnel, la mayor pérdida ocurre entre begin_checkout y add_payment_info: se pierden 958 usuarios (13,29%).
+**Funnel secuencial:** de 7.796 usuarios con `first_visit`, 3.857 llegan a `purchase` (49,47%). La pérdida se concentra en el tramo final: `begin_checkout → add_payment_info` (1.397 usuarios; 21,95%) y `add_payment_info → purchase` (1.110 usuarios; 22,35%).
 
-La retención semanal es estable (entre ~40% y ~44%) en todas las cohortes de registro.
+**La retención acumulada es alta al inicio y baja con las semanas:** ~85% a ~87% en la semana 1 y ~63% a ~65% en la semana 3, con un comportamiento muy parecido entre cohortes.
 
-El cambio de UI del checkout no mostró un efecto estadísticamente significativo (p = 0,4161).
+**El cambio de UI del checkout no mostró un efecto estadísticamente significativo** (p = 0,4161).
 
-Las ventas están repartidas de forma pareja entre categorías (~33% del ingreso cada una). Hogar y Moda venden más unidades que Electrónica.
+**Las ventas están repartidas de forma pareja** entre categorías (~33% del ingreso cada una). Hogar y Moda venden más unidades que Electrónica.
+
 
 ## 📈 Gráficos Z test
 ![ver_1](z_test.JPG)
@@ -77,8 +78,12 @@ Rappiplus realizó una modificación en la UI del checkout para evaluar si impac
 **Concluyendo que:** Las tasas de conversión de control (15.69%) y tratamiento (16.29%) son similares y sus intervalos de confianza al 95% se solapan. El test z (α = 0.05, p = 0.4161) y el intervalo de la diferencia [-0.84, 2.03] pp, que incluye el 0, indican que no hay evidencia estadística de que la nueva UI modifique la conversión. No rechazar H₀ no demuestra que ambas UI sean iguales: significa que con estos datos no se detectó un efecto.
 
 
+## Análisis de cohortes##
+
+![ver_1](cohorte.JPG)
+
 ## 💰 Métricas
-![ver_1](Metricas.JPG)
+![ver_1](Metricas1.JPG)
 
 Datos que confirman la rentabilidad de RappiPlus.
 
