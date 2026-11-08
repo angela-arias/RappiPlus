@@ -2,8 +2,10 @@
 
 **RappiPlus** es un servicio de suscripción dentro del ecosistema de Rappi diseñado para aumentar la frecuencia de compra y el valor generado por usuario. 
 
+
 ## 🎯 Objetivo del proyecto ##
 A lo largo de este proyecto se responderá si el negocio es rentable, si los usuarios regresan a comprar, si los cambios en las plataformas generan impacto, todo esto basado en información confiable. 
+
 
 ## 🗂️ Fuentes usados ##
 
@@ -20,6 +22,11 @@ Tabla de Users
 Tabla de User Activity
 
 experiment_checkout_ui.csv
+
+
+## 🛠️ Herramientas ##
+
+Python, SQL, pandas, numpy, seaborn, matplotlib
 
 
 ## 🔍 Metodología ##
@@ -48,17 +55,14 @@ Prueba estadistica: Z test
 > No necesitas instalar Python ni librerías localmente; Colab ya las incluye.
 
 
-
 ## 📋 Guía de reproducción:
 
-1. Asegúrate de tener los datasets (`plans.csv`, `users_latam.csv`, `usage.csv`) en la misma carpeta que el notebook, o en la ruta indicada dentro del código.
+1. Asegúrate de tener los datasets (`rappiplus_orders_raw.csv`, `rappiplus_catalog.csv`, `rappiplus_marketing_spend.csv`) en la misma carpeta que el notebook, o en la ruta indicada dentro del código.
    
-2. Ejecuta las celdas **en orden secuencial**, ya que algunas dependen de variables o transformaciones definidas en pasos anteriores (por ejemplo, la limpieza de `NaT` y sentinels debe correr antes del análisis de segmentos).
+2. Ejecuta las celdas **en orden secuencial**.
    
-3. Los resultados principales (segmentación por edad, nivel de uso, y detección de outliers) se generan automáticamente al final del notebook
 
-
-## Principales hallazgos ##
+## 📝 Principales hallazgos ##
 
 El negocio es rentable en el periodo, incluso después de descontar marketing.
 
@@ -73,9 +77,7 @@ El cambio de UI del checkout no mostró un efecto estadísticamente significativ
 Las ventas están repartidas de forma pareja entre categorías (~33% del ingreso cada una). Hogar y Moda venden más unidades que Electrónica.
 
 
-## Herramientas ##
 
-Python, SQL, pandas, numpy, seaborn, matplotlib
 
 
 
