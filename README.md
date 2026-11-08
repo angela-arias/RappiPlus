@@ -82,6 +82,21 @@ Rappiplus realizó una modificación en la UI del checkout para evaluar si impac
 
 ![ver_1](cohorte.JPG)
 
+### Retención por cohortes
+
+La retención se calculó de forma acumulada por cohorte de registro (mes de `fecha_registro`). Un usuario cuenta como retenido en la semana N si estuvo activo (`activo = 1`) en la semana N o en una posterior. El denominador es el tamaño de la cohorte.
+
+**Resultados:**
+- Semana 1: ~85% a ~87% de los usuarios retenidos.
+- Semana 2: ~77% a ~80%.
+- Semana 3: ~63% a ~65%.
+
+**Interpretación:** la proporción de usuarios activos disminuye unos 20 puntos entre la semana 1 y la semana 3, con un comportamiento muy parecido en las cinco cohortes (enero a mayo). No se observa una cohorte que retenga claramente mejor o peor.
+
+**Limitaciones:** la métrica mide actividad, no compras, por lo que no permite concluir que los usuarios compren menos. Al ser acumulada, la retención es decreciente por construcción. 
+
+
+
 ## 💰 Métricas
 ![ver_1](Metricas1.JPG)
 
