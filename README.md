@@ -22,7 +22,7 @@ Tabla de User Activity
 experiment_checkout_ui.csv
 
 
-## Metodología ##
+## 🔍 Metodología ##
 
 Limpieza de datasets: se encontraron duplicados, NaNs, valores negativos y outliers.
 
@@ -33,6 +33,29 @@ Visualizaciones
 Análisis de cohortes
 
 Prueba estadistica: Z test
+
+
+## 🚀 Cómo ejecutar el notebook: 
+ 
+#### ⚙️ Abrir en Google Colab:
+
+1. Ve al archivo `.ipynb` dentro de este repositorio. 📓 [Ver notebook del análisis](S12_Estudiante_Proyecto_Final.ipynb)
+  
+2. Haz clic en el botón **"Open in Colab"** (o copia la URL del notebook y pégala en [https://colab.research.google.com](https://colab.research.google.com) → pestaña "GitHub").
+   
+3. Una vez abierto, ejecuta las celdas en orden desde el menú **Runtime > Run all**.
+
+> No necesitas instalar Python ni librerías localmente; Colab ya las incluye.
+
+
+
+## 📋 Guía de reproducción:
+
+1. Asegúrate de tener los datasets (`plans.csv`, `users_latam.csv`, `usage.csv`) en la misma carpeta que el notebook, o en la ruta indicada dentro del código.
+   
+2. Ejecuta las celdas **en orden secuencial**, ya que algunas dependen de variables o transformaciones definidas en pasos anteriores (por ejemplo, la limpieza de `NaT` y sentinels debe correr antes del análisis de segmentos).
+   
+3. Los resultados principales (segmentación por edad, nivel de uso, y detección de outliers) se generan automáticamente al final del notebook
 
 
 ## Principales hallazgos ##
