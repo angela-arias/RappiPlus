@@ -46,7 +46,7 @@ Prueba estadistica: Z test.
  
 #### ⚙️ Abrir en Google Colab:
 
-1. Ve al archivo `.ipynb` dentro de este repositorio. 📓 [Ver notebook del análisis](S12_Estudiante_Proyecto_Final.ipynb)
+1. Ve al archivo `.ipynb` dentro de este repositorio. 📓 [Ver notebook del análisis](Proyecto_Final.ipynb)
   
 2. Haz clic en el botón **"Open in Colab"** (o copia la URL del notebook y pégala en [https://colab.research.google.com](https://colab.research.google.com) → pestaña "GitHub").
    
