@@ -22,22 +22,42 @@ Tabla de User Activity
 experiment_checkout_ui.csv
 
 
-## Desarrollo ##
-Para lograr responder las preguntas de negocio se debe iniciar con datos confiables. Para ello:
+## Metodología ##
 
-Se importaron las librerias, se cargaron los datasets, se validó su calidad, se diagnosticaron que tan completos estaban los datos.
+Limpieza de datasets: se encontraron duplicados, NaNs, valores negativos y outliers.
 
-Se detectaron columnas con Dtype incorrecto,  como por ejemplo columnas de fechas con otros tipos, se procedió a su corrección.
+Análisis exploratorio
 
-Se identificaron 100 duplicados en orders, luego de ser revisados se encontró que efectivamente eran datos duplicados y que su eliminación era necesaria para no inflar los valores como ventas, costos, marketing.
+Visualizaciones
 
-En orders se encontraron 50 NaNs los cuales no tenian información categoria_producto, cantidad, precio_unitario, monto_descuento. Pero si tenia información en **monto_total**. Luego de su revisión se puedo recuperar la categoria_producto desde la columna nombre_producto. Se mantuvieron los 50 registros ya que al contener el monto total serviria para futuras métricas, sin embargo, se marcaron como "detalle incompleto".
+Análisis de cohortes
 
-Además, 30 filas más no tenian información ni en categoria_producto ni en nombre_producto, pero si contenian el resto de información util para futuras métricas,  por tal motivo, se marcaron como "Sin dato" las columnas en mención.
-
+Prueba estadistica: Z test
 
 
-04 valores negativos que no correspondian a devoluciones, 10 outilers
+## Principales hallazgos ##
+
+El negocio es rentable en el periodo, incluso después de descontar marketing.
+
+Marketing es la partida que más pesa: equivale a cerca del 30% del ingreso y a casi la mitad del profit bruto.
+
+En el funnel, la mayor pérdida ocurre entre begin_checkout y add_payment_info: se pierden 958 usuarios (13,29%).
+
+La retención semanal es estable (entre ~40% y ~44%) en todas las cohortes de registro.
+
+El cambio de UI del checkout no mostró un efecto estadísticamente significativo (p = 0,4161).
+
+Las ventas están repartidas de forma pareja entre categorías (~33% del ingreso cada una). Hogar y Moda venden más unidades que Electrónica.
+
+
+## Herramientas ##
+
+Python, SQL, pandas, numpy, seaborn, matplotlib
+
+
+
+
+
 
 
 
