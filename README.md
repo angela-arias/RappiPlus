@@ -70,7 +70,7 @@ El cambio de UI del checkout no mostró un efecto estadísticamente significativ
 Las ventas están repartidas de forma pareja entre categorías (~33% del ingreso cada una). Hogar y Moda venden más unidades que Electrónica.
 
 ## Gráficos
-![ver_1](z_test.png)
+![ver_1](z_test.JPG)
 
 Rappiplus realizó una modificación en la UI del checkout para evaluar si impactaba la **tasa de conversión de compra**. Para lo cual se utilizó un Z test para su verificación. 
 
